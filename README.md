@@ -21,7 +21,10 @@
 
 # 📝 Description <a name="description"></a>
 ----------------	
+![First View](https://github.com/aspzs/Weather-Dashboard/blob/main/assets/1.png) 
 This project (app) have the functionality of showing a 5 Day Weather Forecast, just enter the city that you want to know the weather 
+![Second View](https://github.com/aspzs/Weather-Dashboard/blob/main/assets/2.png) 
+
 
 
 # ❔❔ Why this project is here? <a name="why"></a>
