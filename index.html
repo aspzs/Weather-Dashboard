@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather Dashboard</title>
+  <!--I used bootstrap for the desing-->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-log-3">
+                <div class="card">
+                      <h3 class="card-header">Search a citie's weather: </h3>
+                      <form id="search-form" class="card-body">
+                          <label class="form-label" for="city"></label>
+                          <input name="city" id="search-city" type="text" autofocus="true" class="form-input" />
+                          <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                      </form>
+                    </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                        <h6>Searched Cities: </h6>
+                    </div>
+                    <div class="card-body" id="history"></div>
+                  </div>
+              
+              </div>
+
+
+            <div class="col-12 col-lg-9" id="results-container">
+                <div class="card">
+                    <h3 class="card-header"><span id="name"></span><br><span id="date"></span><span id="icon"></span></h3>
+                    <div class="card-body" id="current-stats">
+                        <p>Temperature: <span id="temp"></span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Wind Speed: <span id="wind"></span></p>
+                        <p>UV Index: <span id="uv"></span><span class="alert" id="uv-alert"></span></p>
+                    </div>
+                </div>
+
+                <div class="card" id="forecast-container">
+                    <div class="card-header">
+                        <h3 class="card-title">5-Day Forecast</h3>
+                    </div>
+
+                    <div class="row card-body" id="forecast-body">  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    <script src="./assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+</html>
